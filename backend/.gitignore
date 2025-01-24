@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Build output
+/dist
+/build
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories (if using package managers other than npm, e.g., Yarn)
+yarn.lock
+package-lock.json
+
+# Test coverage
+coverage/
+
+# Database files
+*.db
+*.sqlite
+
+# Temporary files
+*.swp
+*.swo
