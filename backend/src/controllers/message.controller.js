@@ -2,7 +2,7 @@ import Message from "../models/message.model.js";
 import User from "../models/user.model.js";
 
 //fetching all users to display on sidebar
-const getUsersForSidebar = async (req, res) => {
+export const getUsersForSidebar = async (req, res) => {
   try {
     const loggedInUserId = req.user._id;
     const filteredUsers = await User.find({
@@ -72,4 +72,3 @@ export const sendMessages = async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 };
-export default getUsersForSidebar;
